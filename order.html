@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <title>Заказы</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <input type="text" name="NameBook" id="NameBook" placeholder="Название книги" required>
+            <input type="text" name="AuthorBook" id="AuthorBook" placeholder="Автор книги" required>
+            <input type="date" name="DateOrder" id="DateOrder" placeholder="Дата создания заказа" required>
+            <select name="BookIzdan" id="BookIzdan" required>
+                <option selected hidden>Выберите издание</option>
+                <option value="1 издание">1 издание</option>
+                <option value="2 издание">2 издание</option>
+            </select>
+            <div class="block"></div>
+            <button id="OrderSend">Создать заказ</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script/orders.js"></script>
+</body>
+
+</html>
